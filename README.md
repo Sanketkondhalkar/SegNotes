@@ -1,2 +1,2 @@
-#Segnotes
+#Segnotes:
 Some screenshots of segnotes
