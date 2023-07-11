@@ -1,0 +1,203 @@
+.userallnotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.userallnotes .lds-default {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.userallnotes .lds-default div {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  animation: lds-default 1.2s linear infinite;
+}
+.userallnotes .lds-default div:nth-child(1) {
+  animation-delay: 0s;
+  top: 37px;
+  left: 66px;
+}
+.userallnotes .lds-default div:nth-child(2) {
+  animation-delay: -0.1s;
+  top: 22px;
+  left: 62px;
+}
+.userallnotes .lds-default div:nth-child(3) {
+  animation-delay: -0.2s;
+  top: 11px;
+  left: 52px;
+}
+.userallnotes .lds-default div:nth-child(4) {
+  animation-delay: -0.3s;
+  top: 7px;
+  left: 37px;
+}
+.userallnotes .lds-default div:nth-child(5) {
+  animation-delay: -0.4s;
+  top: 11px;
+  left: 22px;
+}
+.userallnotes .lds-default div:nth-child(6) {
+  animation-delay: -0.5s;
+  top: 22px;
+  left: 11px;
+}
+.userallnotes .lds-default div:nth-child(7) {
+  animation-delay: -0.6s;
+  top: 37px;
+  left: 7px;
+}
+.userallnotes .lds-default div:nth-child(8) {
+  animation-delay: -0.7s;
+  top: 52px;
+  left: 11px;
+}
+.userallnotes .lds-default div:nth-child(9) {
+  animation-delay: -0.8s;
+  top: 62px;
+  left: 22px;
+}
+.userallnotes .lds-default div:nth-child(10) {
+  animation-delay: -0.9s;
+  top: 66px;
+  left: 37px;
+}
+.userallnotes .lds-default div:nth-child(11) {
+  animation-delay: -1s;
+  top: 62px;
+  left: 52px;
+}
+.userallnotes .lds-default div:nth-child(12) {
+  animation-delay: -1.1s;
+  top: 52px;
+  left: 62px;
+}
+@keyframes lds-default {
+  0%, 20%, 80%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+.userallnotes .box {
+  width: 25%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.userallnotes .box .quote i {
+  margin-top: 10px;
+  font-size: 45px;
+  color: #17c0eb;
+}
+.userallnotes .box .image {
+  margin: 10px 0;
+  height: 150px;
+  width: 150px;
+  background: #4070f4;
+  padding: 3px;
+  border-radius: 50%;
+}
+.userallnotes .box .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #fff;
+}
+.userallnotes .box p {
+  text-align: justify;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.userallnotes .box .name_job {
+  margin: 10px 0 3px 0;
+  color: #4070f4;
+  font-size: 18px;
+  font-weight: 600;
+}
+.userallnotes .rating i {
+  font-size: 18px;
+  color: #4070f4;
+  margin-bottom: 5px;
+}
+.userallnotes .btns {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.userallnotes .btns button {
+  background: #4070f4;
+  width: 100%;
+  padding: 9px 0px;
+  outline: none;
+  border: 2px solid #4070f4;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: #4070f4;
+  transition: all 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Safari */
+}
+.userallnotes .btns button .loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid red;
+  width: 30px;
+  height: 30px; /* Safari */
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.userallnotes .btns button:first-child {
+  background: none;
+  margin-right: 5px;
+}
+.userallnotes .btns button:last-child {
+  color: #fff;
+  margin-left: 5px;
+}
+.userallnotes .btns button:first-child:hover {
+  background: #4070f4;
+  color: #fff;
+}
+.userallnotes .btns button:hover {
+  color: #fff;
+}
+@media (max-width: 1045px) {
+  .userallnotes .box {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 710px) {
+  .userallnotes .box {
+    width: 100%;
+  }
+}/*# sourceMappingURL=UserAllNotes.css.map */
